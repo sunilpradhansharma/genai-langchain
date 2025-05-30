@@ -79,17 +79,23 @@ Types of Memory:
 
 ## 🧠 What are Models?
 
-LangChain abstracts complexity from interacting with:
+The Model Component in LangChain is a crucial part of the framework, designed to facilitate interactions with various language models and embedding models.
 
-- Language Models (LLMs & Chat Models)
-- Embedding Models (for semantic search)
-
-These models can be **local** or **API-based**, and LangChain provides a **unified interface** for both.
+1. It abstracts the complexity of working directly with different LLMs, chat models, and embedding models, providing a uniform interface to communicate with them. 
+2. This makes it easier to build applications that rely on AI-generated text, text embeddings for similarity search, and retrieval-augmented generation (RAG).
 
 - ![Model Types Diagram](docs/Model_Types_Diagram.png)
 ---
 
 ## 🆚 LLMs vs Chat Models
+
+Both Language Models and Embedding Models (Open and Closed Source) : Can be downloaded in Local / called via API
+
+
+**LLMs** – General-purpose models that is used for raw text generation. They take a string (or plain text) as input and returns a string (plain text). These are traditionally older models and are not used much now.
+
+**Chat Models** – Language models that are specialized for conversational tasks. They take a sequence of messages as inputs and return chat messages as outputs (as opposed to using plain text). These are traditionally newer models and used more in comparison to the LLMs.
+
 
 | Feature            | LLMs (Base Models)                 | Chat Models (Instruction-Tuned)            |
 |--------------------|------------------------------------|--------------------------------------------|
@@ -125,9 +131,8 @@ Prompts are input instructions or queries given to a model to guide its output
 
 - ![Research Assistant](docs/Research_Assistant_UI.png)
 
-- **Static Prompts**: Hardcoded questions  
-- **Dynamic Prompts**: Template-based and flexible
-
+- **Static Prompts**:  Hardcoded and do not change. They always send the same input to the language model.  
+- **Dynamic Prompts**: Template-based and change based on variables. You define a structure with placeholders, and then you fill those placeholders with runtime data.
 
 
 ```python
