@@ -149,7 +149,6 @@ filled_prompt = prompt.format(country="India")
 
 A PromptTemplate in LangChain is a structured way to create prompts dynamically by inserting variables into a predefined template. Instead of hardcoding prompts, PromptTemplate allows you to define placeholders that can be filled in at runtime with different inputs.
 This makes it reusable, flexible, and easy to manage, especially when working with dynamic user inputs or automated workflows.
-
 - ![Static vs Dynamic Messages](docs/Invoke_Static_vs_Dynamic_Messages.png)
 
 ### Prompt Template Use Case
@@ -162,11 +161,10 @@ Explanation Length: {length_input}
 If mathematical equations are present, explain using simple code or analogies.
 Respond “Insufficient information available” if not found.
 ```
+
 ### MessagesPlaceholder
 A **MessagesPlaceholder** in LangChain is a special placeholder used inside a ChatPromptTemplate to dynamically insert chat history or a list of messages at runtime.
 Example: Customer requesting for refund for a product, AI Agent loads the chat history and uses it to generate a response.
-
-```python
 
 ---
 
