@@ -162,6 +162,11 @@ Explanation Length: {length_input}
 If mathematical equations are present, explain using simple code or analogies.
 Respond “Insufficient information available” if not found.
 ```
+### MessagesPlaceholder
+A **MessagesPlaceholder** in LangChain is a special placeholder used inside a ChatPromptTemplate to dynamically insert chat history or a list of messages at runtime.
+Example: Customer requesting for refund for a product, AI Agent loads the chat history and uses it to generate a response.
+
+```python
 
 ---
 
