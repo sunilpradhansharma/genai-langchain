@@ -160,16 +160,6 @@ Respond “Insufficient information available” if not found.
 
 ---
 
-## 🖼️ Image Placeholders
-
-> 📌 Replace these with actual image files or relative paths.
-
-
-
-
-
----
-
 ## 📚 Resources
 
 - 🌐 [LangChain Official Docs](https://python.langchain.com/docs/introduction/)
