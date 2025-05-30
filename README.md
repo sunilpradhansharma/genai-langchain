@@ -151,7 +151,7 @@ A PromptTemplate in LangChain is a structured way to create prompts dynamically 
 This makes it reusable, flexible, and easy to manage, especially when working with dynamic user inputs or automated workflows.
 
 - ![Static vs Dynamic Messages](docs/Invoke_Static_vs_Dynamic_Messages.png)
-- 
+
 ### Prompt Template Use Case
 
 ```text
@@ -176,13 +176,3 @@ Example: Customer requesting for refund for a product, AI Agent loads the chat h
 - 📦 [LangChain GitHub](https://github.com/langchain-ai/langchain)
 
 ---
-
-## 🙌 Contributing
-
-Contributions welcome! Feel free to open issues or pull requests.
-
----
-
-## 📝 License
-
-LangChain is licensed under the MIT License.
